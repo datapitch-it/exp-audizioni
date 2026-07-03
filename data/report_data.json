@@ -1,0 +1,1892 @@
+{
+  "meta": {
+    "legislatura": 19,
+    "camera_only": true,
+    "nota_senato": "Il Senato non e' coperto: l'endpoint SPARQL del Senato non espone data/commissione delle audizioni informali.",
+    "totale_audizioni": 3420,
+    "totale_commissioni": 43,
+    "audizioni_con_atto_collegato": 665,
+    "atti_distinti_arricchiti": 121,
+    "metodo_classificazione": "euristico a regole/dizionario (nessun registro ufficiale collegato); vedi scripts/lib_categories.py"
+  },
+  "sintesi_generale": {
+    "categorie": {
+      "Sindacati e associazioni di categoria": 448,
+      "Autorità indipendenti/soggetti istituzionali": 861,
+      "Aziende partecipate": 48,
+      "Aziende": 116,
+      "Associazioni e organizzazioni della società civile": 448,
+      "Esperti/Professori/Professionisti": 401,
+      "Altro": 1098
+    },
+    "top_soggetti": [
+      [
+        "CGIL",
+        74
+      ],
+      [
+        "CISL",
+        73
+      ],
+      [
+        "UIL",
+        55
+      ],
+      [
+        "UGL",
+        51
+      ],
+      [
+        "Confindustria",
+        46
+      ],
+      [
+        "Coldiretti",
+        32
+      ],
+      [
+        "CNA",
+        32
+      ],
+      [
+        "Confcommercio",
+        31
+      ],
+      [
+        "ANCI",
+        28
+      ],
+      [
+        "Confartigianato",
+        27
+      ],
+      [
+        "RAI",
+        24
+      ],
+      [
+        "Confesercenti",
+        24
+      ],
+      [
+        "ANCE",
+        23
+      ],
+      [
+        "ISTAT",
+        17
+      ],
+      [
+        "Confagricoltura",
+        16
+      ]
+    ],
+    "tipologia_atti": {
+      "Proposta di legge/Disegno di legge": 386,
+      "Decreto-legge/Legge di conversione": 265,
+      "Legge Costituzionale": 14
+    },
+    "fase_iter": {
+      "In esame": 221,
+      "Pubblicato in Gazzetta Ufficiale": 353,
+      "Ritirato/Decaduto": 16,
+      "Approvato": 75
+    },
+    "andamento_mensile": [
+      [
+        "2022-11",
+        22
+      ],
+      [
+        "2022-12",
+        58
+      ],
+      [
+        "2023-01",
+        147
+      ],
+      [
+        "2023-02",
+        75
+      ],
+      [
+        "2023-03",
+        164
+      ],
+      [
+        "2023-04",
+        193
+      ],
+      [
+        "2023-05",
+        292
+      ],
+      [
+        "2023-06",
+        187
+      ],
+      [
+        "2023-07",
+        109
+      ],
+      [
+        "2023-08",
+        35
+      ],
+      [
+        "2023-09",
+        182
+      ],
+      [
+        "2023-10",
+        145
+      ],
+      [
+        "2023-11",
+        122
+      ],
+      [
+        "2023-12",
+        76
+      ],
+      [
+        "2024-01",
+        151
+      ],
+      [
+        "2024-02",
+        107
+      ],
+      [
+        "2024-03",
+        95
+      ],
+      [
+        "2024-04",
+        61
+      ],
+      [
+        "2024-05",
+        58
+      ],
+      [
+        "2024-06",
+        37
+      ],
+      [
+        "2024-07",
+        70
+      ],
+      [
+        "2024-08",
+        2
+      ],
+      [
+        "2024-09",
+        32
+      ],
+      [
+        "2024-10",
+        74
+      ],
+      [
+        "2024-11",
+        61
+      ],
+      [
+        "2024-12",
+        31
+      ],
+      [
+        "2025-01",
+        52
+      ],
+      [
+        "2025-02",
+        66
+      ],
+      [
+        "2025-03",
+        62
+      ],
+      [
+        "2025-04",
+        44
+      ],
+      [
+        "2025-05",
+        62
+      ],
+      [
+        "2025-06",
+        51
+      ],
+      [
+        "2025-07",
+        57
+      ],
+      [
+        "2025-08",
+        3
+      ],
+      [
+        "2025-09",
+        34
+      ],
+      [
+        "2025-10",
+        92
+      ],
+      [
+        "2025-11",
+        82
+      ],
+      [
+        "2025-12",
+        43
+      ],
+      [
+        "2026-01",
+        25
+      ],
+      [
+        "2026-02",
+        12
+      ],
+      [
+        "2026-03",
+        48
+      ],
+      [
+        "2026-04",
+        26
+      ],
+      [
+        "2026-05",
+        48
+      ],
+      [
+        "2026-06",
+        27
+      ]
+    ]
+  },
+  "ranking_commissioni": [
+    [
+      "X Commissione (Attività produttive, commercio e turismo)",
+      336
+    ],
+    [
+      "VIII Commissione (Ambiente, territorio e lavori pubblici)",
+      251
+    ],
+    [
+      "XI Commissione (Lavoro pubblico e privato)",
+      192
+    ],
+    [
+      "Commissione parlamentare di inchiesta sul fenomeno delle mafie e sulle altre associazioni criminali, anche straniere",
+      191
+    ],
+    [
+      "Commissione parlamentare di inchiesta sul femminicidio, nonché su ogni forma di violenza di genere",
+      180
+    ],
+    [
+      "IX Commissione (Trasporti, poste e telecomunicazioni)",
+      174
+    ],
+    [
+      "II Commissione (Giustizia)",
+      149
+    ],
+    [
+      "III Commissione (Affari esteri e comunitari)",
+      148
+    ],
+    [
+      "XIV Commissione (Politiche dell'Unione europea)",
+      132
+    ],
+    [
+      "Commissione parlamentare di inchiesta sulla gestione dell'emergenza sanitaria causata dalla diffusione epidemica del virus SARS-CoV-2 e sulle misure adottate per prevenire e affrontare l'emergenza epidemiologica da SARS-CoV-2",
+      118
+    ],
+    [
+      "I Commissione (Affari costituzionali, della Presidenza del Consiglio e Interni)",
+      111
+    ],
+    [
+      "VII Commissione (Cultura, scienza e istruzione)",
+      108
+    ],
+    [
+      "XII Commissione (Affari sociali)",
+      107
+    ],
+    [
+      "Commissione parlamentare di inchiesta sulla scomparsa di Emanuela Orlandi e di Mirella Gregori",
+      106
+    ],
+    [
+      "Commissione parlamentare di inchiesta sulle attività illecite connesse al ciclo dei rifiuti e su altri illeciti ambientali e agroalimentari",
+      103
+    ],
+    [
+      "Commissione parlamentare di inchiesta sulle condizioni di sicurezza e sullo stato di degrado delle città e delle loro periferie",
+      93
+    ],
+    [
+      "VI Commissione (Finanze)",
+      89
+    ],
+    [
+      "V Commissione (Bilancio, tesoro e programmazione)",
+      86
+    ],
+    [
+      "Commissione parlamentare per il contrasto degli svantaggi derivanti dall'insularità",
+      85
+    ],
+    [
+      "XIII Commissione (Agricoltura)",
+      77
+    ],
+    [
+      "IV Commissione (Difesa)",
+      70
+    ],
+    [
+      "Commissione parlamentare di controllo sull'attività degli enti gestori di forme obbligatorie di previdenza e assistenza sociale",
+      59
+    ],
+    [
+      "Comitato parlamentare per la sicurezza della Repubblica",
+      53
+    ],
+    [
+      "Commissione parlamentare di inchiesta sul rischio idrogeologico e sismico del territorio italiano, sull'attuazione delle norme di prevenzione e sicurezza e sugli interventi di emergenza e di ricostruzione a seguito degli eventi calamitosi verificatisi dall'anno 2019",
+      49
+    ],
+    [
+      "Commissione parlamentare per l'infanzia e l'adolescenza",
+      49
+    ],
+    [
+      "Commissione parlamentare per l'indirizzo generale e la vigilanza dei servizi radiotelevisivi",
+      42
+    ],
+    [
+      "Commissione parlamentare di inchiesta sulle cause del disastro della nave «Moby Prince»",
+      41
+    ],
+    [
+      "Commissione parlamentare di inchiesta sulle condizioni di lavoro in Italia, sullo sfruttamento e sulla tutela della salute e della sicurezza nei luoghi di lavoro pubblici e privati",
+      34
+    ],
+    [
+      "Commissione parlamentare di inchiesta sulla morte di David Rossi",
+      30
+    ],
+    [
+      "Commissione parlamentare per l'attuazione del federalismo fiscale",
+      27
+    ],
+    [
+      "Commissione parlamentare di inchiesta sui fatti accaduti presso la comunità «Il Forteto»",
+      25
+    ],
+    [
+      "Comitato parlamentare di controllo sull'attuazione dell'Accordo di Schengen, di vigilanza sull'attività di Europol, di controllo e vigilanza in materia di immigrazione",
+      17
+    ],
+    [
+      "Commissione parlamentare di vigilanza sull'anagrafe tributaria",
+      17
+    ],
+    [
+      "Commissione parlamentare per le questioni regionali",
+      16
+    ],
+    [
+      "Comitato per la legislazione",
+      15
+    ],
+    [
+      "Commissione parlamentare per la semplificazione",
+      10
+    ],
+    [
+      "Giunta per le autorizzazioni",
+      9
+    ],
+    [
+      "Commissione parlamentare di inchiesta sugli effetti economici e sociali derivanti dalla transizione demografica in atto",
+      6
+    ],
+    [
+      "Commissione d'indagine a norma dell'articolo 58 del Regolamento (richiesta dai deputati Serracchiani, Lai e Orlando)",
+      5
+    ],
+    [
+      "Discussione in Assemblea",
+      3
+    ],
+    [
+      "Giunta delle elezioni",
+      3
+    ],
+    [
+      "Commissione d'indagine a norma dell'articolo 58 del Regolamento (richiesta dal deputato Conte)",
+      2
+    ],
+    [
+      "Commissione speciale per l'esame di atti del Governo",
+      2
+    ]
+  ],
+  "per_commissione": {
+    "Comitato parlamentare di controllo sull'attuazione dell'Accordo di Schengen, di vigilanza sull'attività di Europol, di controllo e vigilanza in materia di immigrazione": {
+      "totale_audizioni": 17,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 1,
+        "Autorità indipendenti/soggetti istituzionali": 11,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 3,
+        "Esperti/Professori/Professionisti": 1,
+        "Altro": 1
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "ANCI",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "ANCI",
+        "volte": 1
+      }
+    },
+    "Comitato parlamentare per la sicurezza della Repubblica": {
+      "totale_audizioni": 53,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 36,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 1,
+        "Altro": 16
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "Corte dei Conti",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Corte dei Conti",
+        "volte": 1
+      }
+    },
+    "Comitato per la legislazione": {
+      "totale_audizioni": 15,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 4,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 10,
+        "Altro": 1
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Commissione d'indagine a norma dell'articolo 58 del Regolamento (richiesta dai deputati Serracchiani, Lai e Orlando)": {
+      "totale_audizioni": 5,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 0,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 0,
+        "Altro": 5
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Commissione d'indagine a norma dell'articolo 58 del Regolamento (richiesta dal deputato Conte)": {
+      "totale_audizioni": 2,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 0,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 0,
+        "Altro": 2
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Commissione parlamentare di controllo sull'attività degli enti gestori di forme obbligatorie di previdenza e assistenza sociale": {
+      "totale_audizioni": 59,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 4,
+        "Autorità indipendenti/soggetti istituzionali": 18,
+        "Aziende partecipate": 1,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 7,
+        "Esperti/Professori/Professionisti": 4,
+        "Altro": 25
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "INPS",
+          3
+        ],
+        [
+          "ANCE",
+          1
+        ],
+        [
+          "Cassa Depositi e Prestiti",
+          1
+        ],
+        [
+          "Confcommercio",
+          1
+        ],
+        [
+          "Confindustria",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "INPS",
+        "volte": 3
+      }
+    },
+    "Commissione parlamentare di inchiesta sugli effetti economici e sociali derivanti dalla transizione demografica in atto": {
+      "totale_audizioni": 6,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 1,
+        "Autorità indipendenti/soggetti istituzionali": 1,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 2,
+        "Esperti/Professori/Professionisti": 1,
+        "Altro": 1
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Commissione parlamentare di inchiesta sui fatti accaduti presso la comunità «Il Forteto»": {
+      "totale_audizioni": 25,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 5,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 3,
+        "Altro": 17
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Commissione parlamentare di inchiesta sul femminicidio, nonché su ogni forma di violenza di genere": {
+      "totale_audizioni": 180,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 12,
+        "Autorità indipendenti/soggetti istituzionali": 40,
+        "Aziende partecipate": 1,
+        "Aziende": 6,
+        "Associazioni e organizzazioni della società civile": 48,
+        "Esperti/Professori/Professionisti": 29,
+        "Altro": 44
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "ISTAT",
+          2
+        ],
+        [
+          "ENEL",
+          1
+        ],
+        [
+          "Confartigianato",
+          1
+        ],
+        [
+          "Coldiretti",
+          1
+        ],
+        [
+          "Confesercenti",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "ISTAT",
+        "volte": 2
+      }
+    },
+    "Commissione parlamentare di inchiesta sul fenomeno delle mafie e sulle altre associazioni criminali, anche straniere": {
+      "totale_audizioni": 191,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 6,
+        "Autorità indipendenti/soggetti istituzionali": 83,
+        "Aziende partecipate": 0,
+        "Aziende": 2,
+        "Associazioni e organizzazioni della società civile": 15,
+        "Esperti/Professori/Professionisti": 22,
+        "Altro": 63
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "Corte dei Conti",
+          1
+        ],
+        [
+          "ANCI",
+          1
+        ],
+        [
+          "ABI",
+          1
+        ],
+        [
+          "ANCE",
+          1
+        ],
+        [
+          "Coldiretti",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Corte dei Conti",
+        "volte": 1
+      }
+    },
+    "Commissione parlamentare di inchiesta sul rischio idrogeologico e sismico del territorio italiano, sull'attuazione delle norme di prevenzione e sicurezza e sugli interventi di emergenza e di ricostruzione a seguito degli eventi calamitosi verificatisi dall'anno 2019": {
+      "totale_audizioni": 49,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 3,
+        "Autorità indipendenti/soggetti istituzionali": 15,
+        "Aziende partecipate": 2,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 3,
+        "Esperti/Professori/Professionisti": 1,
+        "Altro": 25
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "ISPRA",
+          2
+        ],
+        [
+          "ENEL",
+          1
+        ],
+        [
+          "ANIA",
+          1
+        ],
+        [
+          "Ferrovie dello Stato",
+          1
+        ],
+        [
+          "ANCI",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "ISPRA",
+        "volte": 2
+      }
+    },
+    "Commissione parlamentare di inchiesta sulla gestione dell'emergenza sanitaria causata dalla diffusione epidemica del virus SARS-CoV-2 e sulle misure adottate per prevenire e affrontare l'emergenza epidemiologica da SARS-CoV-2": {
+      "totale_audizioni": 118,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 5,
+        "Autorità indipendenti/soggetti istituzionali": 43,
+        "Aziende partecipate": 1,
+        "Aziende": 2,
+        "Associazioni e organizzazioni della società civile": 24,
+        "Esperti/Professori/Professionisti": 32,
+        "Altro": 11
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "INAIL",
+          3
+        ],
+        [
+          "Corte dei Conti",
+          1
+        ],
+        [
+          "RAI",
+          1
+        ],
+        [
+          "ISTAT",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "INAIL",
+        "volte": 3
+      }
+    },
+    "Commissione parlamentare di inchiesta sulla morte di David Rossi": {
+      "totale_audizioni": 30,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 2,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 3,
+        "Esperti/Professori/Professionisti": 7,
+        "Altro": 18
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Commissione parlamentare di inchiesta sulla scomparsa di Emanuela Orlandi e di Mirella Gregori": {
+      "totale_audizioni": 106,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 9,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 23,
+        "Altro": 74
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Commissione parlamentare di inchiesta sulle attività illecite connesse al ciclo dei rifiuti e su altri illeciti ambientali e agroalimentari": {
+      "totale_audizioni": 103,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 3,
+        "Autorità indipendenti/soggetti istituzionali": 56,
+        "Aziende partecipate": 0,
+        "Aziende": 7,
+        "Associazioni e organizzazioni della società civile": 8,
+        "Esperti/Professori/Professionisti": 4,
+        "Altro": 25
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "Coldiretti",
+          1
+        ],
+        [
+          "ISPRA",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Coldiretti",
+        "volte": 1
+      }
+    },
+    "Commissione parlamentare di inchiesta sulle cause del disastro della nave «Moby Prince»": {
+      "totale_audizioni": 41,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 2,
+        "Aziende partecipate": 6,
+        "Aziende": 5,
+        "Associazioni e organizzazioni della società civile": 2,
+        "Esperti/Professori/Professionisti": 2,
+        "Altro": 24
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "Snam",
+          3
+        ],
+        [
+          "ENI",
+          2
+        ],
+        [
+          "RAI",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Snam",
+        "volte": 3
+      }
+    },
+    "Commissione parlamentare di inchiesta sulle condizioni di lavoro in Italia, sullo sfruttamento e sulla tutela della salute e della sicurezza nei luoghi di lavoro pubblici e privati": {
+      "totale_audizioni": 34,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 9,
+        "Autorità indipendenti/soggetti istituzionali": 6,
+        "Aziende partecipate": 2,
+        "Aziende": 2,
+        "Associazioni e organizzazioni della società civile": 6,
+        "Esperti/Professori/Professionisti": 0,
+        "Altro": 9
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "CGIL",
+          6
+        ],
+        [
+          "CISL",
+          4
+        ],
+        [
+          "INAIL",
+          2
+        ],
+        [
+          "UIL",
+          2
+        ],
+        [
+          "UGL",
+          2
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "CGIL",
+        "volte": 6
+      }
+    },
+    "Commissione parlamentare di inchiesta sulle condizioni di sicurezza e sullo stato di degrado delle città e delle loro periferie": {
+      "totale_audizioni": 93,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 3,
+        "Autorità indipendenti/soggetti istituzionali": 27,
+        "Aziende partecipate": 0,
+        "Aziende": 6,
+        "Associazioni e organizzazioni della società civile": 18,
+        "Esperti/Professori/Professionisti": 13,
+        "Altro": 26
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "ISTAT",
+          2
+        ],
+        [
+          "ANCE",
+          1
+        ],
+        [
+          "ANCI",
+          1
+        ],
+        [
+          "Confedilizia",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "ISTAT",
+        "volte": 2
+      }
+    },
+    "Commissione parlamentare di vigilanza sull'anagrafe tributaria": {
+      "totale_audizioni": 17,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 13,
+        "Aziende partecipate": 0,
+        "Aziende": 3,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 0,
+        "Altro": 1
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "ISTAT",
+          1
+        ],
+        [
+          "INPS",
+          1
+        ],
+        [
+          "Garante Privacy",
+          1
+        ],
+        [
+          "Banca d'Italia",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "ISTAT",
+        "volte": 1
+      }
+    },
+    "Commissione parlamentare per il contrasto degli svantaggi derivanti dall'insularità": {
+      "totale_audizioni": 85,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 4,
+        "Autorità indipendenti/soggetti istituzionali": 45,
+        "Aziende partecipate": 1,
+        "Aziende": 6,
+        "Associazioni e organizzazioni della società civile": 4,
+        "Esperti/Professori/Professionisti": 3,
+        "Altro": 22
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "ISTAT",
+          1
+        ],
+        [
+          "ANCI",
+          1
+        ],
+        [
+          "CGIL",
+          1
+        ],
+        [
+          "CISL",
+          1
+        ],
+        [
+          "UIL",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "ISTAT",
+        "volte": 1
+      }
+    },
+    "Commissione parlamentare per l'attuazione del federalismo fiscale": {
+      "totale_audizioni": 27,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 5,
+        "Autorità indipendenti/soggetti istituzionali": 9,
+        "Aziende partecipate": 0,
+        "Aziende": 2,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 2,
+        "Altro": 9
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "ANCI",
+          3
+        ],
+        [
+          "UPI",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "ANCI",
+        "volte": 3
+      }
+    },
+    "Commissione parlamentare per l'indirizzo generale e la vigilanza dei servizi radiotelevisivi": {
+      "totale_audizioni": 42,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 3,
+        "Autorità indipendenti/soggetti istituzionali": 9,
+        "Aziende partecipate": 17,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 2,
+        "Esperti/Professori/Professionisti": 8,
+        "Altro": 3
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "RAI",
+          19
+        ],
+        [
+          "CNA",
+          1
+        ],
+        [
+          "CGIL",
+          1
+        ],
+        [
+          "CISL",
+          1
+        ],
+        [
+          "UIL",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "RAI",
+        "volte": 19
+      }
+    },
+    "Commissione parlamentare per l'infanzia e l'adolescenza": {
+      "totale_audizioni": 49,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 1,
+        "Autorità indipendenti/soggetti istituzionali": 24,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 10,
+        "Esperti/Professori/Professionisti": 4,
+        "Altro": 10
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Commissione parlamentare per la semplificazione": {
+      "totale_audizioni": 10,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 1,
+        "Autorità indipendenti/soggetti istituzionali": 6,
+        "Aziende partecipate": 1,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 1,
+        "Altro": 1
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "ANCI",
+          1
+        ],
+        [
+          "Poste Italiane",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "ANCI",
+        "volte": 1
+      }
+    },
+    "Commissione parlamentare per le questioni regionali": {
+      "totale_audizioni": 16,
+      "n_atti_distinti": 1,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 7,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 9,
+        "Altro": 0
+      },
+      "tipologia_atti": {
+        "Decreto-legge/Legge di conversione": 1
+      },
+      "fase_iter": {
+        "Pubblicato in Gazzetta Ufficiale": 1
+      },
+      "top_soggetti": [
+        [
+          "Banca d'Italia",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Banca d'Italia",
+        "volte": 1
+      }
+    },
+    "Commissione speciale per l'esame di atti del Governo": {
+      "totale_audizioni": 2,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 1,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 0,
+        "Altro": 1
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Discussione in Assemblea": {
+      "totale_audizioni": 3,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 2,
+        "Autorità indipendenti/soggetti istituzionali": 0,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 0,
+        "Altro": 1
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Giunta delle elezioni": {
+      "totale_audizioni": 3,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 1,
+        "Autorità indipendenti/soggetti istituzionali": 0,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 0,
+        "Altro": 2
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "Giunta per le autorizzazioni": {
+      "totale_audizioni": 9,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 0,
+        "Autorità indipendenti/soggetti istituzionali": 0,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 0,
+        "Esperti/Professori/Professionisti": 9,
+        "Altro": 0
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [],
+      "soggetto_piu_audito": null
+    },
+    "I Commissione (Affari costituzionali, della Presidenza del Consiglio e Interni)": {
+      "totale_audizioni": 111,
+      "n_atti_distinti": 18,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 20,
+        "Autorità indipendenti/soggetti istituzionali": 22,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 18,
+        "Esperti/Professori/Professionisti": 28,
+        "Altro": 23
+      },
+      "tipologia_atti": {
+        "Decreto-legge/Legge di conversione": 52,
+        "Legge Costituzionale": 14,
+        "Proposta di legge/Disegno di legge": 23
+      },
+      "fase_iter": {
+        "Pubblicato in Gazzetta Ufficiale": 60,
+        "In esame": 23,
+        "Approvato": 6
+      },
+      "top_soggetti": [
+        [
+          "CGIL",
+          5
+        ],
+        [
+          "CISL",
+          5
+        ],
+        [
+          "UIL",
+          5
+        ],
+        [
+          "ANCI",
+          3
+        ],
+        [
+          "UGL",
+          3
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "CGIL",
+        "volte": 5
+      }
+    },
+    "II Commissione (Giustizia)": {
+      "totale_audizioni": 149,
+      "n_atti_distinti": 26,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 23,
+        "Autorità indipendenti/soggetti istituzionali": 27,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 33,
+        "Esperti/Professori/Professionisti": 29,
+        "Altro": 37
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 87,
+        "Decreto-legge/Legge di conversione": 17
+      },
+      "fase_iter": {
+        "In esame": 44,
+        "Pubblicato in Gazzetta Ufficiale": 39,
+        "Ritirato/Decaduto": 13,
+        "Approvato": 8
+      },
+      "top_soggetti": [
+        [
+          "CGIL",
+          3
+        ],
+        [
+          "Corte dei Conti",
+          2
+        ],
+        [
+          "Confartigianato",
+          2
+        ],
+        [
+          "CNA",
+          2
+        ],
+        [
+          "Confindustria",
+          2
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "CGIL",
+        "volte": 3
+      }
+    },
+    "III Commissione (Affari esteri e comunitari)": {
+      "totale_audizioni": 148,
+      "n_atti_distinti": 3,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 9,
+        "Autorità indipendenti/soggetti istituzionali": 18,
+        "Aziende partecipate": 1,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 20,
+        "Esperti/Professori/Professionisti": 25,
+        "Altro": 75
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 10
+      },
+      "fase_iter": {
+        "Pubblicato in Gazzetta Ufficiale": 5,
+        "In esame": 5
+      },
+      "top_soggetti": [
+        [
+          "Confcommercio",
+          1
+        ],
+        [
+          "Confindustria",
+          1
+        ],
+        [
+          "CNA",
+          1
+        ],
+        [
+          "Copagri",
+          1
+        ],
+        [
+          "Confagricoltura",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Confcommercio",
+        "volte": 1
+      }
+    },
+    "IV Commissione (Difesa)": {
+      "totale_audizioni": 70,
+      "n_atti_distinti": 0,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 2,
+        "Autorità indipendenti/soggetti istituzionali": 23,
+        "Aziende partecipate": 1,
+        "Aziende": 11,
+        "Associazioni e organizzazioni della società civile": 4,
+        "Esperti/Professori/Professionisti": 7,
+        "Altro": 22
+      },
+      "tipologia_atti": {},
+      "fase_iter": {},
+      "top_soggetti": [
+        [
+          "Ferrovie dello Stato",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Ferrovie dello Stato",
+        "volte": 1
+      }
+    },
+    "IX Commissione (Trasporti, poste e telecomunicazioni)": {
+      "totale_audizioni": 174,
+      "n_atti_distinti": 11,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 30,
+        "Autorità indipendenti/soggetti istituzionali": 27,
+        "Aziende partecipate": 5,
+        "Aziende": 13,
+        "Associazioni e organizzazioni della società civile": 35,
+        "Esperti/Professori/Professionisti": 5,
+        "Altro": 59
+      },
+      "tipologia_atti": {
+        "Decreto-legge/Legge di conversione": 25,
+        "Proposta di legge/Disegno di legge": 37
+      },
+      "fase_iter": {
+        "Pubblicato in Gazzetta Ufficiale": 31,
+        "In esame": 16,
+        "Approvato": 15
+      },
+      "top_soggetti": [
+        [
+          "CGIL",
+          7
+        ],
+        [
+          "CISL",
+          7
+        ],
+        [
+          "Ferrovie dello Stato",
+          6
+        ],
+        [
+          "UGL",
+          6
+        ],
+        [
+          "ANCI",
+          4
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "CGIL",
+        "volte": 7
+      }
+    },
+    "V Commissione (Bilancio, tesoro e programmazione)": {
+      "totale_audizioni": 86,
+      "n_atti_distinti": 4,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 23,
+        "Autorità indipendenti/soggetti istituzionali": 31,
+        "Aziende partecipate": 2,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 3,
+        "Esperti/Professori/Professionisti": 2,
+        "Altro": 25
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 3,
+        "Decreto-legge/Legge di conversione": 8
+      },
+      "fase_iter": {
+        "In esame": 2,
+        "Pubblicato in Gazzetta Ufficiale": 9
+      },
+      "top_soggetti": [
+        [
+          "CGIL",
+          5
+        ],
+        [
+          "CISL",
+          5
+        ],
+        [
+          "UIL",
+          5
+        ],
+        [
+          "UGL",
+          5
+        ],
+        [
+          "ISTAT",
+          5
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "CGIL",
+        "volte": 5
+      }
+    },
+    "VI Commissione (Finanze)": {
+      "totale_audizioni": 89,
+      "n_atti_distinti": 7,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 19,
+        "Autorità indipendenti/soggetti istituzionali": 16,
+        "Aziende partecipate": 0,
+        "Aziende": 2,
+        "Associazioni e organizzazioni della società civile": 10,
+        "Esperti/Professori/Professionisti": 17,
+        "Altro": 25
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 31,
+        "Decreto-legge/Legge di conversione": 19
+      },
+      "fase_iter": {
+        "In esame": 9,
+        "Approvato": 22,
+        "Pubblicato in Gazzetta Ufficiale": 19
+      },
+      "top_soggetti": [
+        [
+          "CGIL",
+          3
+        ],
+        [
+          "CISL",
+          3
+        ],
+        [
+          "UIL",
+          3
+        ],
+        [
+          "Confindustria",
+          3
+        ],
+        [
+          "UGL",
+          2
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "CGIL",
+        "volte": 3
+      }
+    },
+    "VII Commissione (Cultura, scienza e istruzione)": {
+      "totale_audizioni": 108,
+      "n_atti_distinti": 15,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 15,
+        "Autorità indipendenti/soggetti istituzionali": 33,
+        "Aziende partecipate": 1,
+        "Aziende": 8,
+        "Associazioni e organizzazioni della società civile": 20,
+        "Esperti/Professori/Professionisti": 8,
+        "Altro": 23
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 29
+      },
+      "fase_iter": {
+        "In esame": 8,
+        "Approvato": 11,
+        "Pubblicato in Gazzetta Ufficiale": 10
+      },
+      "top_soggetti": [
+        [
+          "CISL",
+          4
+        ],
+        [
+          "CGIL",
+          3
+        ],
+        [
+          "AGCOM",
+          3
+        ],
+        [
+          "RAI",
+          2
+        ],
+        [
+          "Confindustria",
+          2
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "CISL",
+        "volte": 4
+      }
+    },
+    "VIII Commissione (Ambiente, territorio e lavori pubblici)": {
+      "totale_audizioni": 251,
+      "n_atti_distinti": 12,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 61,
+        "Autorità indipendenti/soggetti istituzionali": 49,
+        "Aziende partecipate": 0,
+        "Aziende": 14,
+        "Associazioni e organizzazioni della società civile": 26,
+        "Esperti/Professori/Professionisti": 12,
+        "Altro": 89
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 28,
+        "Decreto-legge/Legge di conversione": 78
+      },
+      "fase_iter": {
+        "In esame": 28,
+        "Pubblicato in Gazzetta Ufficiale": 78
+      },
+      "top_soggetti": [
+        [
+          "Confindustria",
+          9
+        ],
+        [
+          "ANCE",
+          8
+        ],
+        [
+          "CISL",
+          7
+        ],
+        [
+          "ISPRA",
+          7
+        ],
+        [
+          "Confcommercio",
+          6
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Confindustria",
+        "volte": 9
+      }
+    },
+    "X Commissione (Attività produttive, commercio e turismo)": {
+      "totale_audizioni": 336,
+      "n_atti_distinti": 5,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 69,
+        "Autorità indipendenti/soggetti istituzionali": 55,
+        "Aziende partecipate": 5,
+        "Aziende": 15,
+        "Associazioni e organizzazioni della società civile": 50,
+        "Esperti/Professori/Professionisti": 22,
+        "Altro": 120
+      },
+      "tipologia_atti": {
+        "Decreto-legge/Legge di conversione": 28,
+        "Proposta di legge/Disegno di legge": 27
+      },
+      "fase_iter": {
+        "Pubblicato in Gazzetta Ufficiale": 28,
+        "In esame": 27
+      },
+      "top_soggetti": [
+        [
+          "Confindustria",
+          13
+        ],
+        [
+          "CGIL",
+          12
+        ],
+        [
+          "CISL",
+          12
+        ],
+        [
+          "UGL",
+          10
+        ],
+        [
+          "UIL",
+          9
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Confindustria",
+        "volte": 13
+      }
+    },
+    "XI Commissione (Lavoro pubblico e privato)": {
+      "totale_audizioni": 192,
+      "n_atti_distinti": 13,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 46,
+        "Autorità indipendenti/soggetti istituzionali": 23,
+        "Aziende partecipate": 1,
+        "Aziende": 10,
+        "Associazioni e organizzazioni della società civile": 24,
+        "Esperti/Professori/Professionisti": 24,
+        "Altro": 64
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 50,
+        "Decreto-legge/Legge di conversione": 16
+      },
+      "fase_iter": {
+        "In esame": 28,
+        "Pubblicato in Gazzetta Ufficiale": 38
+      },
+      "top_soggetti": [
+        [
+          "CGIL",
+          17
+        ],
+        [
+          "CISL",
+          17
+        ],
+        [
+          "UGL",
+          16
+        ],
+        [
+          "UIL",
+          14
+        ],
+        [
+          "Confindustria",
+          6
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "CGIL",
+        "volte": 17
+      }
+    },
+    "XII Commissione (Affari sociali)": {
+      "totale_audizioni": 107,
+      "n_atti_distinti": 11,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 18,
+        "Autorità indipendenti/soggetti istituzionali": 23,
+        "Aziende partecipate": 0,
+        "Aziende": 2,
+        "Associazioni e organizzazioni della società civile": 22,
+        "Esperti/Professori/Professionisti": 11,
+        "Altro": 31
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 20,
+        "Decreto-legge/Legge di conversione": 21
+      },
+      "fase_iter": {
+        "In esame": 9,
+        "Pubblicato in Gazzetta Ufficiale": 24,
+        "Approvato": 8
+      },
+      "top_soggetti": [
+        [
+          "CNR",
+          3
+        ],
+        [
+          "Confindustria",
+          3
+        ],
+        [
+          "CGIL",
+          2
+        ],
+        [
+          "CISL",
+          2
+        ],
+        [
+          "UIL",
+          2
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "CNR",
+        "volte": 3
+      }
+    },
+    "XIII Commissione (Agricoltura)": {
+      "totale_audizioni": 77,
+      "n_atti_distinti": 14,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 30,
+        "Autorità indipendenti/soggetti istituzionali": 20,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 8,
+        "Esperti/Professori/Professionisti": 7,
+        "Altro": 12
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 40
+      },
+      "fase_iter": {
+        "In esame": 22,
+        "Ritirato/Decaduto": 3,
+        "Pubblicato in Gazzetta Ufficiale": 10,
+        "Approvato": 5
+      },
+      "top_soggetti": [
+        [
+          "Coldiretti",
+          15
+        ],
+        [
+          "CNR",
+          3
+        ],
+        [
+          "CNA",
+          3
+        ],
+        [
+          "Confagricoltura",
+          2
+        ],
+        [
+          "Copagri",
+          2
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "Coldiretti",
+        "volte": 15
+      }
+    },
+    "XIV Commissione (Politiche dell'Unione europea)": {
+      "totale_audizioni": 132,
+      "n_atti_distinti": 1,
+      "categorie": {
+        "Sindacati e associazioni di categoria": 19,
+        "Autorità indipendenti/soggetti istituzionali": 22,
+        "Aziende partecipate": 0,
+        "Aziende": 0,
+        "Associazioni e organizzazioni della società civile": 20,
+        "Esperti/Professori/Professionisti": 15,
+        "Altro": 56
+      },
+      "tipologia_atti": {
+        "Proposta di legge/Disegno di legge": 1
+      },
+      "fase_iter": {
+        "Pubblicato in Gazzetta Ufficiale": 1
+      },
+      "top_soggetti": [
+        [
+          "ANCE",
+          3
+        ],
+        [
+          "Confcommercio",
+          2
+        ],
+        [
+          "Confartigianato",
+          2
+        ],
+        [
+          "ANCI",
+          2
+        ],
+        [
+          "Copagri",
+          1
+        ]
+      ],
+      "soggetto_piu_audito": {
+        "nome": "ANCE",
+        "volte": 3
+      }
+    }
+  }
+}
