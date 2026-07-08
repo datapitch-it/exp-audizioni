@@ -164,26 +164,72 @@ function typeBadge(type) {
     : '<span class="badge bg-secondary">Persona</span>';
 }
 
+const RANKING_CHUNK_SIZE = 40;
+
+function attachSubjectRowHandlers(rows) {
+  rows.forEach(row => {
+    row.addEventListener('click', () => {
+      window.location.hash = `soggetto=${row.dataset.type}:${row.dataset.slug}`;
+    });
+  });
+}
+
+function setupInfiniteRanking({ items, type, bodyId, sentinelId, rowHtml }) {
+  const body = document.getElementById(bodyId);
+  let rendered = 0;
+
+  function renderNextChunk() {
+    const next = items.slice(rendered, rendered + RANKING_CHUNK_SIZE);
+    if (!next.length) return;
+
+    const sentinel = document.getElementById(sentinelId);
+    const rowsHtml = next.map((s, i) => rowHtml(s, rendered + i)).join('');
+    sentinel.insertAdjacentHTML('beforebegin', rowsHtml);
+    attachSubjectRowHandlers(Array.from(body.querySelectorAll('.subject-row')).slice(rendered));
+    rendered += next.length;
+
+    if (rendered >= items.length) {
+      sentinel.remove();
+      observer.disconnect();
+    }
+  }
+
+  body.innerHTML = `<tr id="${sentinelId}"><td colspan="4" class="p-0 border-0"></td></tr>`;
+  const sentinel = document.getElementById(sentinelId);
+  const scrollContainer = body.closest('.table-responsive');
+
+  const observer = new IntersectionObserver((entries) => {
+    if (entries.some(e => e.isIntersecting)) renderNextChunk();
+  }, { root: scrollContainer, rootMargin: '200px' });
+
+  observer.observe(sentinel);
+  renderNextChunk();
+}
+
 function renderRankings() {
-  const orgBody = document.getElementById('orgRankingBody');
-  orgBody.innerHTML = SUBJECTS.organizzazioni.slice(0, 40).map((s, i) => `
+  setupInfiniteRanking({
+    items: SUBJECTS.organizzazioni,
+    type: 'organization',
+    bodyId: 'orgRankingBody',
+    sentinelId: 'orgRankingSentinel',
+    rowHtml: (s, i) => `
     <tr class="subject-row" role="button" data-type="organization" data-slug="${s.slug}">
       <td>${i + 1}</td><td>${s.name}</td>
       <td><span class="small text-muted">${s.category || ''}</span></td>
       <td class="text-end">${s.count}</td>
-    </tr>`).join('');
+    </tr>`,
+  });
 
-  const personBody = document.getElementById('personRankingBody');
-  personBody.innerHTML = SUBJECTS.persone.slice(0, 40).map((s, i) => `
+  setupInfiniteRanking({
+    items: SUBJECTS.persone,
+    type: 'person',
+    bodyId: 'personRankingBody',
+    sentinelId: 'personRankingSentinel',
+    rowHtml: (s, i) => `
     <tr class="subject-row" role="button" data-type="person" data-slug="${s.slug}">
       <td>${i + 1}</td><td>${s.name}</td>
       <td class="text-end">${s.count}</td>
-    </tr>`).join('');
-
-  document.querySelectorAll('.subject-row').forEach(row => {
-    row.addEventListener('click', () => {
-      window.location.hash = `soggetto=${row.dataset.type}:${row.dataset.slug}`;
-    });
+    </tr>`,
   });
 }
 

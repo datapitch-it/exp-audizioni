@@ -45,7 +45,7 @@
 
 <nav class="navbar navbar-dark" style="background: var(--brand-dark);">
   <div class="container">
-    <span class="navbar-brand">Audizioni Camera · XIX Legislatura</span>
+    <a class="navbar-brand" href="./">Audizioni Camera · XIX Legislatura</a>
   </div>
 </nav>
 
@@ -60,6 +60,52 @@
 <main class="container py-4">
 
   <div class="alert alert-warning" role="alert" id="metaWarning"></div>
+
+  <h2 class="section-title" id="soggetti">Soggetti auditi (persone e organizzazioni)</h2>
+  <div class="card chart-card p-3 mb-4">
+    <label for="subjectSearch" class="form-label small text-uppercase text-muted fw-bold">Cerca un soggetto (min. 3 caratteri)</label>
+    <div class="position-relative" style="max-width:520px;">
+      <input type="search" class="form-control" id="subjectSearch" placeholder="Es. Confindustria, Giorgetti, CGIL…" autocomplete="off">
+      <div id="subjectDropdown" class="list-group position-absolute w-100 shadow-sm" style="z-index:1050; max-height:340px; overflow-y:auto; display:none;"></div>
+    </div>
+    <p class="footer-note mt-2 mb-0">
+      Nomi estratti automaticamente dal testo libero delle audizioni (non un registro ufficiale):
+      <span id="subjectsMeta"></span>. I nomi non sono deduplicati per varianti grafiche (stesso limite della classificazione per categoria).
+    </p>
+  </div>
+
+  <div id="subjectDetail" class="card chart-card p-4 mb-4" style="display:none;"></div>
+
+  <div id="subjectRankings" class="row g-3">
+    <div class="col-lg-6">
+      <div class="card chart-card p-3 h-100">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h6 class="fw-bold mb-0">Organizzazioni più audite</h6>
+          <span class="badge bg-secondary" id="orgRankCount"></span>
+        </div>
+        <div class="table-responsive" style="max-height:520px; overflow-y:auto;">
+          <table class="table table-sm table-hover mb-0">
+            <thead><tr><th>#</th><th>Nome</th><th>Categoria</th><th class="text-end">Audizioni</th></tr></thead>
+            <tbody id="orgRankingBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card chart-card p-3 h-100">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h6 class="fw-bold mb-0">Persone più audite</h6>
+          <span class="badge bg-secondary" id="personRankCount"></span>
+        </div>
+        <div class="table-responsive" style="max-height:520px; overflow-y:auto;">
+          <table class="table table-sm table-hover mb-0">
+            <thead><tr><th>#</th><th>Nome</th><th class="text-end">Audizioni</th></tr></thead>
+            <tbody id="personRankingBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <h2 class="section-title">Quadro di sintesi generale</h2>
   <div class="row g-3" id="kpiRow"></div>
@@ -120,53 +166,12 @@
     <p>La <strong>categoria del soggetto audito</strong> è ricavata con un classificatore a regole/dizionario applicato al testo libero del titolo di ciascuna audizione (nessun registro ufficiale è collegato, a differenza del report di riferimento XVIII legislatura che incrociava i registri di Mise/Confindustria/Confcommercio/ecc.). È un'euristica, non un NER: una quota di audizioni resta in "Altro" perché il soggetto è una persona fisica non riconducibile con certezza a un ente organizzato (frequente nelle commissioni d'inchiesta, es. testimoni, familiari di vittime).</p>
     <p>La <strong>tipologia dell'atto</strong> e la <strong>fase dell'iter</strong> sono ricavate interrogando il tool <code>bill</code>/<code>bill-progress</code> per i soli 121 provvedimenti univoci effettivamente collegati alle audizioni (665 audizioni su 3.420, ~19%); le restanti sono audizioni di commissioni d'inchiesta o non legate a un atto specifico.</p>
     <p class="mb-0">Script di elaborazione: <code>scripts/extract</code>/<code>lib_categories.py</code>, <code>scripts/enrich_bills.py</code>, <code>scripts/build_dataset.py</code>. Dataset aggregato: <code>data/report_data.json</code>.</p>
-  </div>
-
-  <h2 class="section-title" id="soggetti">Soggetti auditi (persone e organizzazioni)</h2>
-  <div class="card chart-card p-3 mb-4">
-    <label for="subjectSearch" class="form-label small text-uppercase text-muted fw-bold">Cerca un soggetto (min. 3 caratteri)</label>
-    <div class="position-relative" style="max-width:520px;">
-      <input type="search" class="form-control" id="subjectSearch" placeholder="Es. Confindustria, Giorgetti, CGIL…" autocomplete="off">
-      <div id="subjectDropdown" class="list-group position-absolute w-100 shadow-sm" style="z-index:1050; max-height:340px; overflow-y:auto; display:none;"></div>
-    </div>
-    <p class="footer-note mt-2 mb-0">
-      Nomi estratti automaticamente dal testo libero delle audizioni (non un registro ufficiale):
-      <span id="subjectsMeta"></span>. I nomi non sono deduplicati per varianti grafiche (stesso limite della classificazione per categoria).
+    <p class="mb-0 mt-2">
+      Codice sorgente: <a href="https://github.com/datapitch-it/exp-audizioni" target="_blank" rel="noopener">repository di questa pagina</a>
+      · Dati estratti tramite <a href="https://github.com/aborruso/italianparliament-mcp" target="_blank" rel="noopener">italianparliament-mcp</a>
     </p>
   </div>
 
-  <div id="subjectDetail" class="card chart-card p-4 mb-4" style="display:none;"></div>
-
-  <div id="subjectRankings" class="row g-3">
-    <div class="col-lg-6">
-      <div class="card chart-card p-3 h-100">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <h6 class="fw-bold mb-0">Organizzazioni più audite</h6>
-          <span class="badge bg-secondary" id="orgRankCount"></span>
-        </div>
-        <div class="table-responsive" style="max-height:520px; overflow-y:auto;">
-          <table class="table table-sm table-hover mb-0">
-            <thead><tr><th>#</th><th>Nome</th><th>Categoria</th><th class="text-end">Audizioni</th></tr></thead>
-            <tbody id="orgRankingBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="card chart-card p-3 h-100">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <h6 class="fw-bold mb-0">Persone più audite</h6>
-          <span class="badge bg-secondary" id="personRankCount"></span>
-        </div>
-        <div class="table-responsive" style="max-height:520px; overflow-y:auto;">
-          <table class="table table-sm table-hover mb-0">
-            <thead><tr><th>#</th><th>Nome</th><th class="text-end">Audizioni</th></tr></thead>
-            <tbody id="personRankingBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </main>
 
